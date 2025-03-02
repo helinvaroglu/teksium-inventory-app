@@ -44,8 +44,9 @@
 .submitButton:active {
     background-color: rgba(205, 92, 0, 1);
     color: white !important;
+    font-weight: bold;
     margin: 5px;
-    padding: 5px;
+    padding: 7px;
     width: 250px !important;
 }
 
