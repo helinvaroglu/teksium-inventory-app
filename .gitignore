@@ -33,4 +33,3 @@ error.log
 # VS Code settings
 .vscode/
 backend/package.json
-/client
