@@ -17,6 +17,12 @@ export default function Home() {
         <div>
           <button className={`btn ${styles.submitButton}`} type="submit">Giriş</button>
         </div>
+
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <button type="button" className={`btn ${styles.settingsButton}`}>Settings</button>
+          <button type="button" className={`btn ${styles.demoButton}`}>Demo</button>
+        </div>
+
       </div>
     </div>
   );
