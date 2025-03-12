@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #393838;
+    padding: 40px 30px;
+    color: white;
+}
+
+.sidebarButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebarButton img {
+    width: 35px;
+    height: 35px;
+    fill: white;
+}
