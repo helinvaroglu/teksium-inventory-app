@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation';
 export default function Home() {
   const router = useRouter();
 
-  const goToCatalogPage = () => {
-    router.push('/catalogPage'); 
+  const goToDesenlerPage = () => {
+    router.push('/desenlerPage'); 
   };
 
   return (
@@ -28,7 +28,7 @@ export default function Home() {
 
         <div className="btn-group" role="group" aria-label="Basic example">
           <button type="button" className={`btn ${styles.settingsButton}`}>Settings</button>
-          <button type="button" className={`btn ${styles.demoButton}`} onClick={goToCatalogPage}>Demo</button>
+          <button type="button" className={`btn ${styles.demoButton}`} onClick={goToDesenlerPage}>Demo</button>
         </div>
 
       </div>

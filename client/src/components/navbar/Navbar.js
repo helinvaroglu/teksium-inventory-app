@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from 'next/link';
 import SidebarIcon from "../../../public/Sidebar.svg";
 import BarcodeIcon from "../../../public/Barcode.svg";
@@ -22,13 +22,13 @@ export default function Navbar() {
                 <img src="/Sidebar.svg" alt="SidebarIcon" width={35} height={35} />
             </button>
 
-            <h2>Page Name</h2>
+            <h2>Desenler</h2>
 
             <button className={styles.barcodeButton}>
                 <img src="/Barcode.svg" alt="BarcodeIcon" width={35} height={35} />
             </button>
 
-            {isSidebarOpen && <Sidebar onClose={toggleSidebar} />}
+            {isSidebarOpen && <Sidebar onClose={() => setIsSidebarOpen(false)} />}
         </nav>
     );
 }
