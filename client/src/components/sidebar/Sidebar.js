@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useRouter } from 'next/navigation';
 import styles from "./sidebar.module.css";
 
 export default function Sidebar({ onClose }) {
-
-    const sidebarRef = useRef(null);
+    const router = useRouter();
+    const sidebarRef = useRef(null);    
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -31,11 +32,11 @@ export default function Sidebar({ onClose }) {
             <br></br>
 
             <ul className={styles.list}>
-                <li><a href="/desenler">Desenler</a></li>
-                <li><a href="/varyantlar">Varyantlar</a></li>
-                <li><a href="/firmalar">Firmalar</a></li>
-                <li><a href="/gonderal">Gönder/Al/Sil</a></li>
-                <li><a href="/cikis">Çıkış</a></li>
+                <li onClick={() => router.push('/desenlerPage')}>Desenler</li>
+                <li onClick={() => router.push('/varyantlarPage')}>Varyantlar</li>
+                <li onClick={() => router.push('/firmalarPage')}>Firmalar</li>
+                <li onClick={() => router.push('/gonderalPage')}>Gönder/Al/Sil</li>
+                <li onClick={() => router.push('/cikisPage')}>Çıkış</li>
             </ul>
         </div>
     );
