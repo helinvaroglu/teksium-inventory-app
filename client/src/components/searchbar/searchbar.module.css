@@ -1,0 +1,32 @@
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #393838;
+    padding: 15px 5px;
+    color: white;
+    border-top: 2px solid #CD5C00;
+}
+
+.textinput {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px auto;
+}
+
+.image {
+    margin-right: 5px;
+}
+
+.input {
+    flex: 1;
+    font-size: 18px;
+}
+
+.input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
