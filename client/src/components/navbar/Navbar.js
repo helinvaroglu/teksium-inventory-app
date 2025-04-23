@@ -16,13 +16,30 @@ export default function Navbar() {
         setIsSidebarOpen(!isSidebarOpen);
     };
 
+    const getPageTitle = () => {
+        switch (pathname) {
+            case '/desenlerPage':
+                return 'Desenler';
+            case '/varyantlarPage':
+                return 'Varyantlar';
+            case '/firmalarPage':
+                return 'Firmalar';
+            case '/gonderalPage':
+                return 'Gönder/Al/Sil';
+            case '/cikisPage':
+                return 'Çıkış';
+            default:
+                return 'Sayfa';
+        }
+    };
+
     return (
         <nav className={styles.navbar}>
             <button onClick={toggleSidebar} className={styles.sidebarButton}>
                 <img src="/Sidebar.svg" alt="SidebarIcon" width={35} height={35} />
             </button>
 
-            <h2>Desenler</h2>
+            <h2>{getPageTitle()}</h2>
 
             <button className={styles.barcodeButton}>
                 <img src="/Barcode.svg" alt="BarcodeIcon" width={35} height={35} />
