@@ -36,7 +36,7 @@ export default function Sidebar({ onClose }) {
                 <li onClick={() => router.push('/varyantlarPage')}>Varyantlar</li>
                 <li onClick={() => router.push('/firmalarPage')}>Firmalar</li>
                 <li onClick={() => router.push('/gonderalPage')}>Gönder/Al/Sil</li>
-                <li onClick={() => router.push('/cikisPage')}>Çıkış</li>
+                <li onClick={() => router.push('/')}>Çıkış</li>
             </ul>
         </div>
     );
