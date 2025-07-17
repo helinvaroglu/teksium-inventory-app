@@ -1,3 +1,29 @@
 .background {
     color: "#474646";
 }
+
+.productframe {
+    background-color: none;
+    padding: 0.1rem;
+    margin: 1rem;
+    position: relative;
+}
+
+.productheader {
+    color: white;
+    top: 0;
+}
+
+.productcode {
+    color: white;
+    font-size: 1rem;
+}
+
+.productprice {
+    color: #CD5C00;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
